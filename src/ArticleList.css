@@ -1,0 +1,55 @@
+.table-wrapper {
+    display: "flex";
+    flex-direction: "column";
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+thead {
+    background-color: rgb(51, 128, 243);
+    color: white;
+}
+
+th {
+    min-width: 150px;
+    border: 1px solid grey;
+    text-align: start;
+    padding: 5px;
+}
+
+th:first-child,
+th:last-child {
+    min-width: 20px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+.edit-action,
+.remove-action {
+    width: auto;
+    margin: 1px;
+}
